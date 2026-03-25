@@ -1,0 +1,170 @@
+.bg-contact::before {
+  background: radial-gradient(circle at 50% 100%, rgba(10, 27, 94, 0.5) 0%, transparent 60%);
+}
+
+.contact-container {
+  padding: 4rem 1.5rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-intro {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.info-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .info-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  transition: transform var(--transition-fast);
+}
+
+.info-card:hover {
+  transform: translateX(10px);
+}
+
+.info-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(10, 27, 94, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background var(--transition-fast);
+}
+
+.info-icon {
+  color: var(--suzuki-blue);
+  transition: color var(--transition-fast);
+}
+
+.info-card:hover .info-icon-wrapper {
+  background: var(--suzuki-blue);
+}
+
+.info-card:hover .info-icon {
+  color: var(--white);
+}
+
+.info-content h4 {
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.info-content p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form-section {
+  padding: 3rem 2.5rem;
+}
+
+.form-heading {
+  font-size: 2rem;
+  color: var(--suzuki-blue);
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.form-control {
+  padding: 0.875rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-sm);
+  background: var(--bg-color);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-dark);
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--suzuki-red);
+  box-shadow: 0 0 0 3px rgba(210, 0, 0, 0.1);
+  background: var(--white);
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.125rem;
+  width: 100%;
+}
+
+.btn-icon {
+  margin-left: 0.5rem;
+  transition: transform var(--transition-fast);
+}
+
+.submit-btn:hover .btn-icon {
+  transform: translateX(5px) translateY(-5px);
+}

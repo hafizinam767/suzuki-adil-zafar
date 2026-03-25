@@ -1,0 +1,145 @@
+.bg-reviews::before {
+  background: radial-gradient(circle at 80% 80%, rgba(210, 0, 0, 0.4) 0%, transparent 60%);
+}
+
+.reviews-content {
+  padding: 4rem 1.5rem;
+}
+
+.reviews-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2.5rem;
+  margin: -6rem auto 4rem;
+  max-width: 800px;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .reviews-stats {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+.stat-item h3 {
+  font-size: 3rem;
+  color: var(--suzuki-blue);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.stat-separator {
+  width: 1px;
+  height: 80px;
+  background-color: rgba(0,0,0,0.1);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .stat-separator {
+    display: block;
+  }
+}
+
+.reviews-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews-grid {
+    column-count: 3;
+    column-gap: 2rem;
+    display: block; /* Switch to column count for masonry effect */
+  }
+  
+  .review-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.review-card {
+  padding: 2.5rem 2rem;
+  position: relative;
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: rgba(210, 0, 0, 0.1);
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 1.5rem;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--suzuki-blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+}
+
+.author-info h4 {
+  color: var(--suzuki-blue);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.review-date {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}

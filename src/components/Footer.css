@@ -1,0 +1,147 @@
+.footer {
+  background-color: var(--suzuki-blue);
+  color: var(--white);
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1.4fr;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo-icon {
+  color: var(--suzuki-red);
+}
+
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  background: white;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-gray {
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-desc {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+  max-width: 320px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background: var(--suzuki-red);
+  transform: translateY(-3px);
+}
+
+.footer-header {
+  font-size: 1.25rem;
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-header::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--suzuki-red);
+}
+
+.footer-links ul, .footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.8);
+  transition: color var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: var(--suzuki-red);
+  transform: translateX(5px);
+}
+
+.footer-contact li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact li span {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-icon {
+  color: var(--suzuki-red);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 2rem;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.875rem;
+}
