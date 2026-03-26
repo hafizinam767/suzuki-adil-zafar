@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="container nav-container">
         <Link to="/" className="nav-logo">
           <img
-            src="/azm-logo.png"
+            src="/logo-original.png"
             alt="Adil Zafar Motors – AZM Logo"
             className="nav-logo-img"
           />

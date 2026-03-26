@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 const HERO_BANNERS = [
-  { id: 1, url: '/hero-swift.jpg', title: 'The All-New Swift', subtitle: 'Temptation Comes Alive!' },
+  { id: 1, url: '/hero-alto.png', title: 'The All-New Alto', subtitle: 'Efficiently Yours!' },
   { id: 2, url: '/hero-banner1.png', title: 'Power & Excellence', subtitle: 'Experience the drive of a lifetime.' },
   { id: 3, url: '/hero-banner2.png', title: 'Innovation Redefined', subtitle: 'Leading the way in automotive excellence.' },
   { id: 4, url: '/hero-banner3.jpg', title: 'Adventure Awaits', subtitle: 'Explore the world with Suzuki.' }

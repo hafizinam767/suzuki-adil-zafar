@@ -33,7 +33,7 @@ const products = [
     price: 'Contact for Price',
     description: 'Versatile and roomy, perfect for both family trips and business deliveries. Reliable utility in every journey.',
     image: '/cars/every.png',
-    tags: ['Minivan', '660cc', 'Automatic']
+    tags: ['Minivan', '660cc']
   },
   {
     id: 'fronx',

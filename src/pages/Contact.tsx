@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, Facebook } from 'lucide-react';
 import './Contact.css';
 
 export default function Contact() {
@@ -59,6 +59,22 @@ export default function Contact() {
                   <h4>Business Hours</h4>
                   <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
                   <p>Sunday: Closed</p>
+                </div>
+              </div>
+              <div className="info-card glass-card">
+                <div className="info-icon-wrapper">
+                  <Facebook className="info-icon" size={24} />
+                </div>
+                <div className="info-content">
+                  <h4>Follow Us</h4>
+                  <a 
+                    href="https://www.facebook.com/adilzafarmotorssuzuki/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="social-link-text"
+                  >
+                    Facebook Page
+                  </a>
                 </div>
               </div>
             </div>

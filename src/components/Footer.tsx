@@ -9,13 +9,13 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/azm-logo.png" alt="Adil Zafar Motors Logo" className="footer-logo-img" />
+              <img src="/logo-original.png" alt="Adil Zafar Motors Logo" className="footer-logo-img" />
             </Link>
             <p className="footer-desc">
               Your Journey, Our Drive! Since 2001, we have been rewriting the standards of automobile dealerships as a full-fledged 7S Authorized Dealership.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link"><Facebook size={20} /></a>
+              <a href="https://www.facebook.com/adilzafarmotorssuzuki/" target="_blank" rel="noopener noreferrer" className="social-link"><Facebook size={20} /></a>
               <a href="#" className="social-link"><Instagram size={20} /></a>
               <a href="#" className="social-link"><Twitter size={20} /></a>
             </div>
