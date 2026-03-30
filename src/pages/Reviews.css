@@ -143,3 +143,11 @@
   font-size: 0.875rem;
   color: var(--text-light);
 }
+
+@media (max-width: 767px) {
+  .reviews-content { padding: 3rem 1rem; }
+  .reviews-stats { margin: -3rem auto 3rem; padding: 1.5rem; gap: 1.5rem; flex-direction: column; }
+  .stat-item h3 { font-size: 2.25rem; }
+  .review-card { padding: 1.5rem; }
+  .review-text { font-size: 1rem; margin-bottom: 1.5rem; }
+}

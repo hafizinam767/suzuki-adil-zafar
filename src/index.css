@@ -78,6 +78,15 @@ ul {
   padding: 0 1.5rem;
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+  }
+}
+
 /* Button Component */
 .btn {
   display: inline-flex;

@@ -41,8 +41,11 @@
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
   .nav-logo-img {
-    height: 44px;
+    height: 38px;
   }
 }
 

@@ -269,8 +269,17 @@
   border-radius: var(--border-radius-md);
 }
 
-@media (max-width: 768px) {
-  .hero-title { font-size: 2.5rem; }
-  .grid-cols-3 { grid-template-columns: 1fr; }
-  .stats-grid { grid-template-columns: 1fr; gap: 2rem; }
+@media (max-width: 767px) {
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; margin-bottom: 1.5rem; }
+  .btn-lg { padding: 0.8rem 1.5rem; font-size: 1rem; }
+  .grid-cols-3, .grid-cols-4, .grid-cols-2 { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .section-header { flex-direction: column; align-items: flex-start; gap: 1rem; margin-bottom: 2rem; }
+  .section-header h2 { font-size: 2rem; }
+  .featured-section { padding: 4rem 1.5rem; }
+  .about-section { padding: 4rem 0; }
+  .about-text h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .about-image-wrapper { height: 300px; padding: 0.5rem; }
+  .stat-box h4 { font-size: 2rem; }
 }

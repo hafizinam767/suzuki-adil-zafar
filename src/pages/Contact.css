@@ -182,3 +182,14 @@ textarea.form-control {
   color: var(--suzuki-red);
   transform: translateX(5px);
 }
+
+@media (max-width: 767px) {
+  .contact-container { padding: 3rem 1rem; margin-top: -2rem; }
+  .contact-grid { gap: 2rem; }
+  .contact-form-section { padding: 2rem 1.25rem; }
+  .form-heading { font-size: 1.75rem; margin-bottom: 1.5rem; }
+  .info-card { padding: 1.25rem; gap: 1rem; flex-direction: column; text-align: center; align-items: center; }
+  .info-icon-wrapper { margin-bottom: 0.5rem; }
+  .social-link-text { text-align: center; }
+  .contact-intro { font-size: 1rem; margin-bottom: 1.5rem; }
+}
